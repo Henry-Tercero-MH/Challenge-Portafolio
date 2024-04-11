@@ -1,0 +1,508 @@
+/*CSS Reset / Normalize*/
+/* Hemos disponibilizado el básico de reset de estilos. Si quieren, añadan más informaciones 
+en las secciones señaladas */
+/*Já deixaremos o básico de reset de estilos. Caso queira adicionar mais informações
+coloque nas sessões indicadas*/
+
+:root {
+  /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
+  /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
+  --cor-de-fundo: #6fe8a9;
+  --cor-de-link: #000;
+  --cor-de-texto: white;
+  --cor-de-box: rgb(0, 0, 0, 0.2);
+  --cor-de-link-claro: #000;
+  --cor-de-fundo-oscuro: #1f1f1f;
+  --cor-de-link-oscuro: #fff;
+}
+.toggle-mode-checkbox {
+  display: none;
+}
+
+.toggle-mode-checkbox:checked + label #mode-icon {
+  filter: invert(
+    100%
+  ); /* Invierte los colores de la imagen cuando el checkbox está marcado */
+}
+
+.dark-mode {
+  --cor-de-fundo: rgb(31, 31, 31);
+  --cor-de-link: #fff;
+}
+.btnFoco {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+body {
+  background-color: var(--cor-de-fundo);
+  color: var(--cor-de-link);
+}
+
+/*En este desafío nosostros gustaríamos que ustedes intentaran utilizar la metodología BEM. 
+
+Lo que es el BEM?
+
+BEM (Bloque, Elemento, Modificador) es un enfoque basado en componentes para el 
+desarrollo web. La idea detrás de esto es dividir la interfaz de usuario en bloques
+independientes. Esto hace que el desarrollo de la interfaz sea fácil y rápido, incluso
+con una interfaz de usuario compleja, y permite la reutilización del código existente sin copiar y pegar.
+
+Enlace de la documentación oficial!
+https://en.bem.info/methodology/quick-start/*/
+
+/*Sección Menu*/
+
+section.menu {
+  width: 80%;
+  display: flex;
+  position: fixed;
+  top: 0;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 32px 10px 32px 10px;
+  left: 120px;
+  background-color: rgb(0, 0, 0, 0.9);
+  box-shadow: 25px;
+  background-color: var(--cor-de-fundo);
+  backdrop-filter: blur(100px); /* Aplica un desenfoque de 20px */
+  color: var(--cor-de-link-claro);
+}
+.tudo {
+  border-color: #1f1f1f solid 2px;
+  color: var(--cor-de-link-claro);
+}
+.menu__list__item__contato {
+  display: none;
+}
+.menu__list {
+  display: flex;
+  gap: 25px;
+  align-content: center;
+  align-items: center;
+}
+.menu__list a {
+  color: var(--cor-de-link);
+  font-size: 20px;
+}
+.menu__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  gap: 25px;
+}
+
+/*Sección Title*/
+
+section.title {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 120px;
+}
+.title__bio {
+  margin-top: 0;
+  font-family: "Raleway";
+  font-size: 2.8rem;
+  font-weight: 1000;
+  text-align: left;
+  width: 700px;
+}
+.title__div {
+  display: flex;
+  align-items: center; /* Alinea los elementos verticalmente */
+  justify-content: space-between;
+}
+
+.title__profile {
+  order: 1;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  margin-bottom: 100px;
+}
+.title__subsection {
+  text-align: justify;
+  padding-top: 15px;
+  font-family: Raleway;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25.83px;
+  padding-bottom: 15px;
+  margin-right: 10px;
+}
+.title__network {
+  display: flex;
+  justify-content: left;
+  gap: 20px;
+  font-size: 15px;
+  align-items: center;
+}
+.title__network__item {
+  display: block;
+}
+.title__container {
+  width: 700px;
+}
+body {
+  background-color: var(--cor-de-fundo);
+  color: var(--cor-de-link);
+  font-family: "Releway";
+}
+/*Sección About*/
+
+section.about {
+  width: 80%;
+  font-family: Raleway;
+  text-align: justify;
+  justify-content: left;
+  font-size: 15px;
+  margin-left: 125px;
+}
+.about__container {
+  width: 70%;
+  justify-content: space-between;
+  margin-top: 10px;
+  font-family: "Raleway";
+}
+.about__title {
+  /* Sobre mi */
+  width: 137px;
+  height: 38px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+  /* identical to box height */
+  /* Preto/100% */
+  color: black;
+  /* Inside auto layout */
+  flex: none;
+
+  margin-bottom: 10px;
+}
+/* skills */
+.skills {
+  width: 80%;
+  margin: 10px auto;
+}
+.skills__title {
+  text-align: center;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+  margin-bottom: 10px;
+  color: var(--cor-de-link);
+}
+.skills__box {
+  /* Skill */
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 5px;
+  gap: 5px;
+  width: 150px;
+  height: 150px;
+  /* Preto/branco */
+  background: #ffffff;
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  align-items: center;
+  border-radius: 30px 15px 30px 15px;
+  /* background-color: var(--cor-de-link); */
+  background-color: var(--cor-de-box);
+}
+.skills__box:hover {
+  border-color: thin solid black 25px;
+  border-radius: 15px 30px 15px 30px;
+  transition: all;
+}
+.skills__box:nth-child(3) {
+  display: none;
+}
+.skills__box:nth-child(4) {
+  order: 3;
+}
+.skills__name {
+  display: active;
+  color: #000;
+  text-align: center;
+}
+.skills__line {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 15px;
+  align-items: center;
+  align-content: center;
+}
+.skills__box {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+/*Sección Hobbies*/
+
+section.hobbies {
+  width: 80%;
+  margin: 0px auto;
+  margin-top: 60px;
+}
+.hobbies__line {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 15px;
+  align-items: center;
+  align-content: center;
+}
+.hobbies__box {
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5px;
+  gap: 5px;
+  width: 150px;
+  height: 150px;
+  /* Preto/branco */
+  background: #ffffff;
+  /* Inside auto layout */
+  order: 1;
+  flex-grow: 0;
+  align-items: center;
+  border-radius: 30px 15px 30px 15px;
+  background-color: var(--cor-de-box);
+}
+.hobbies__box:nth-child(1) {
+  display: none;
+}
+.hobbies__title {
+  color: var(--cor-de-link);
+  text-align: center;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+  margin-bottom: 10px;
+}
+.hobbies__name {
+  display: active;
+  color: #000;
+  text-align: center;
+}
+.hobbies__line {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 15px;
+  align-items: center;
+  align-content: center;
+}
+/* Experiencia Académica*/
+
+section.academic {
+  width: 80%;
+  justify-content: space-between;
+  margin: 90px auto;
+}
+.academic__title {
+  /* Formación académica */
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+  /* identical to box height */
+  text-align: center;
+  /* Preto/100% */
+  color: #464646;
+  text-align: center;
+  /* Inside auto layout */
+  order: 0;
+  flex-grow: 0;
+  margin-bottom: 15px;
+}
+.academic__courses {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: space-between;
+}
+.academic__courses__box {
+  /* Experiência */
+  /* Auto layout */
+  display: flex;
+  gap: 5px;
+  width: 400px;
+  height: 400px;
+  /* Inside auto layout */
+  order: 1;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px 15px 30px 15px;
+}
+/* experiencia*/
+
+section.experience {
+  width: 80%;
+  justify-content: space-between;
+  margin: 90px auto;
+}
+.experience__info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  height: 100px;
+  width: 45px;
+  align-items: center;
+  flex: none;
+  order: 1;
+  flex-grow: 1;
+  background-color: aqua;
+  justify-content: center;
+}
+/*Contacto*/
+.experience__section__title {
+  /* Experiencia profesional */
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+  /* identical to box height */
+  text-align: center;
+  /* Preto/100% */
+  color: #464646;
+  /* Inside auto layout */
+  order: 0;
+  flex-grow: 0;
+  margin: 25px auto;
+}
+.experiencie__box {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+.experience__img {
+  width: 700px;
+  height: 600px;
+}
+.experiencie__box-caja2 {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  order: 1;
+}
+.experience__img_ {
+  order: 2;
+  width: 700px;
+  height: 600px;
+}
+.experiencie__box img {
+  display: inline-block;
+}
+section.formcontato {
+  width: 80%;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+.formcontato__contacto {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+/*footeer*/
+.formcontato__title {
+  width: 141px;
+  height: 38px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+  color: var(--cor-de-link);
+  flex: none;
+  flex-grow: 0;
+}
+.formcontato__text {
+  flex-direction: row;
+}
+.formcontato__input {
+}
+section.footer {
+  width: 100%;
+  margin-top: 60px;
+  align-content: center;
+  padding-top: 60px;
+}
+.footer__rodape {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  align-content: center;
+}
+
+/* Vamos a desafiarnos trabajando con responsividad?
+Utiliza las referencias de los breakpoints @media abajo */
+
+/*Tablet*/
+@media (min-width: 768px) {
+  /* Menú */
+
+  /*title*/
+
+  /*Skills*/
+
+  /*Hobbies*/
+
+  /*Formación Académica*/
+
+  /*Experiencia Profesional*/
+}
+
+/*Mobile*/
+@media (min-width: 425px) {
+  /*Menu*/
+
+  /*Titulo*/
+
+  /*Sección sobre mi*/
+
+  /*Skills*/
+
+  /*Hobbies*/
+
+  /*Formación Académica*/
+
+  /*Experiencia Profesional*/
+
+  /*Contacto*/
+
+  /*Footer*/
+}
