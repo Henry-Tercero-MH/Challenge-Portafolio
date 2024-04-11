@@ -8,8 +8,8 @@ coloque nas sessões indicadas*/
   /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
   /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
   --cor-de-fundo: #6fe8a9;
-  --cor-de-link: #000;
-  --cor-de-texto: white;
+  --cor-de-link: rgb(0, 0, 0);
+  --cor-de-texto: rgb(255, 255, 255);
   --cor-de-box: rgb(0, 0, 0, 0.2);
   --cor-de-link-claro: #000;
   --cor-de-fundo-oscuro: #1f1f1f;
@@ -27,7 +27,7 @@ coloque nas sessões indicadas*/
 
 .dark-mode {
   --cor-de-fundo: rgb(31, 31, 31);
-  --cor-de-link: #fff;
+  --cor-de-link: rgb(255, 255, 255, 0.7);
 }
 .btnFoco {
   border: none;
@@ -106,6 +106,7 @@ section.title {
   align-items: center;
   flex-direction: row;
   margin-top: 120px;
+  color: var(--cor-de-link);
 }
 .title__bio {
   margin-top: 0;
@@ -165,6 +166,7 @@ section.about {
   justify-content: left;
   font-size: 15px;
   margin-left: 125px;
+  color: var(--cor-de-link);
 }
 .about__container {
   width: 70%;
@@ -183,7 +185,7 @@ section.about {
   line-height: 38px;
   /* identical to box height */
   /* Preto/100% */
-  color: black;
+  color: var(--cor-de-link);
   /* Inside auto layout */
   flex: none;
 
@@ -227,7 +229,7 @@ section.about {
   background-color: var(--cor-de-box);
 }
 .skills__box:hover {
-  border-color: thin solid black 25px;
+  border-color: thin solid rgb(0, 0, 0) 25px;
   border-radius: 15px 30px 15px 30px;
   transition: all;
 }
@@ -239,7 +241,7 @@ section.about {
 }
 .skills__name {
   display: active;
-  color: #000;
+  color: var(--cor-de-link);
   text-align: center;
 }
 .skills__line {
@@ -262,6 +264,7 @@ section.hobbies {
   width: 80%;
   margin: 0px auto;
   margin-top: 60px;
+  color: var(--cor-de-link);
 }
 .hobbies__line {
   display: flex;
@@ -293,7 +296,6 @@ section.hobbies {
   display: none;
 }
 .hobbies__title {
-  color: var(--cor-de-link);
   text-align: center;
   font-family: "Raleway";
   font-style: normal;
@@ -301,11 +303,13 @@ section.hobbies {
   font-size: 32px;
   line-height: 38px;
   margin-bottom: 10px;
+  color: var(--cor-de-link);
 }
 .hobbies__name {
   display: active;
   color: #000;
   text-align: center;
+  color: var(--cor-de-link);
 }
 .hobbies__line {
   margin: 0 auto;
@@ -315,6 +319,7 @@ section.hobbies {
   gap: 15px;
   align-items: center;
   align-content: center;
+  color: var(--cor-de-link);
 }
 /* Experiencia Académica*/
 
@@ -322,6 +327,7 @@ section.academic {
   width: 80%;
   justify-content: space-between;
   margin: 90px auto;
+  color: var(--cor-de-link);
 }
 .academic__title {
   /* Formación académica */
@@ -339,6 +345,7 @@ section.academic {
   order: 0;
   flex-grow: 0;
   margin-bottom: 15px;
+  color: var(--cor-de-link);
 }
 .academic__courses {
   display: flex;
@@ -355,10 +362,11 @@ section.academic {
   height: 400px;
   /* Inside auto layout */
   order: 1;
-  background-color: white;
   justify-content: center;
   align-items: center;
   border-radius: 30px 15px 30px 15px;
+  background-color: var(--cor-de-box);
+  text-align: center;
 }
 /* experiencia*/
 
@@ -366,6 +374,7 @@ section.experience {
   width: 80%;
   justify-content: space-between;
   margin: 90px auto;
+  color: var(--cor-de-link);
 }
 .experience__info {
   display: flex;
@@ -392,7 +401,7 @@ section.experience {
   /* identical to box height */
   text-align: center;
   /* Preto/100% */
-  color: #464646;
+  color: var(--cor-de-link);
   /* Inside auto layout */
   order: 0;
   flex-grow: 0;
@@ -405,10 +414,12 @@ section.experience {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 25px;
+  color: var(--cor-de-link);
 }
 .experience__img {
   width: 700px;
   height: 600px;
+  background-color: var(--cor-de-box);
 }
 .experiencie__box-caja2 {
   display: flex;
@@ -431,6 +442,7 @@ section.formcontato {
   width: 80%;
   justify-content: space-between;
   margin-top: 60px;
+  color: var(--cor-de-link);
 }
 .formcontato__contacto {
   display: flex;
@@ -466,6 +478,7 @@ section.footer {
   justify-content: center;
   text-align: center;
   align-content: center;
+  color: var(--cor-de-link);
 }
 
 /* Vamos a desafiarnos trabajando con responsividad?
