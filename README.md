@@ -1,23 +1,28 @@
-# Challenge ONE | Front End -  Portafolio
-
-<p align="center" >
-     <img width="600" heigth="600" src="https://user-images.githubusercontent.com/101413385/169097543-d5ada41e-7db8-481d-9d89-cef4efdf7e05.png">
-</p>
 
 
-### ¡Bienvenido al proyecto base del Portafolio ! Pasos principales:
----
-#### Marca este proyecto con una estrella ⭐
-#### Sigue las lecciones y las instrucciones de contenido 📚
+# Portafolio Personal
 
-### Analisando el repositorio!
----
-### Este es el repositorio base de nuestro proyecto, acá tendrás:
-#### 🔹index.html: Documento HTML concluído que puedes utilizar en tu proyecto. Las fuentes, los archivos CSS y Javascript ya están referenciados en el documento y todas las secciones contienen comentários que te ayudan a entender la estructura. Si quieres, puedes aventurarte y contruir tu propio HTML.
-#### 🔹style.css: Documento de CSS con instrucciones de estilo y algunas sugerencias de desarrollo.
-#### 🔹validacion.js: Documento vacío dónde vas a desarrollar tu lógica de programación para validar formularios usando Javascript.
+Este es el repositorio de mi portafolio personal, desarrollado como parte del desafío del Portafolio de Alura Latam. En este portafolio, presento información sobre mí, mis habilidades, proyectos realizados y cómo contactarme.
 
-#### Cuando clones o descargues el proyecto base, tendrás la siguiente presentación:
-<p align="center" >
-     <img width="600" heigth="600" src="https://user-images.githubusercontent.com/101413385/169064699-f268715c-822c-4335-b066-97a1bc1ea8e1.png">
-</p>
+## Características
+
+- Diseño moderno y atractivo utilizando Flexbox para un diseño flexible y receptivo.
+- Sección "Sobre mí" donde comparto información personal y profesional.
+- Sección "Proyectos" donde muestro algunos de los proyectos en los que he trabajado.
+- Sección "Contacto" con un formulario para que los visitantes puedan enviarme mensajes directamente desde el sitio.
+
+## Tecnologías Utilizadas
+
+- HTML5
+- CSS3 (Flexbox)
+- JavaScript
+
+
+## Contribución
+
+¡Las contribuciones son bienvenidas! Si deseas contribuir a este proyecto, siéntete libre de abrir un problema o enviar una solicitud de extracción.
+
+## Licencia
+
+Este proyecto está bajo la Licencia MIT. Para más detalles, consulta el archivo [LICENSE](LICENSE).
+
